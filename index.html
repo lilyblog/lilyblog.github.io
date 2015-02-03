@@ -32,8 +32,8 @@ function parseResponse (data) {
   
 var script = document.createElement('script');
 // container = document.querySelectorAll('div')[0];
-script.src = 'http://nymeria.sel.ec/videos_for?callback=parseResponse';
-document.getElementsByTagName('head')[0].appendChild(script);
+script.src = 'http://nymeria.sel.ec/videos_for?format=json&callback=parseResponse';
+document.body.appendChild(script);
 
 
 
